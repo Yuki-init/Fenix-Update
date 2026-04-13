@@ -16,7 +16,7 @@ sudo sed -i '/^#\[multilib\]/{N; s/^#\[multilib\]\n#Include/[multilib]\nInclude/
 
 # ── System update ──────────────────────────────────────────────────────────────
 echo "→ Updating system..."
-sudo pacman -Sy --noconfirl archlinux-keychain
+sudo pacman -Sy --noconfirm archlinux-keychain
 sudo pacman -Syu --noconfirm
 
 # ── AUR helper (yay) ──────────────────────────────────────────────────────────
