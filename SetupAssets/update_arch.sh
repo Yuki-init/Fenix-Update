@@ -16,6 +16,7 @@ sudo sed -i '/^#\[multilib\]/{N; s/^#\[multilib\]\n#Include/[multilib]\nInclude/
 
 # ── System update ──────────────────────────────────────────────────────────────
 echo "→ Updating system..."
+sudo pacman -Sy --noconfirl archlinux-keychain
 sudo pacman -Syu --noconfirm
 
 # ── AUR helper (yay) ──────────────────────────────────────────────────────────
@@ -37,9 +38,12 @@ echo "  Using AUR helper: $AUR_HELPER"
 
 # ── Pacman packages ────────────────────────────────────────────────────────────
 PACMAN_PKGS=(
-    lib32-vulkan-radeon
     lib32-vulkan-intel
     plasma-meta
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    noto-fonts-extra
     tesseract-data-eng
     kde-graphics-meta
     kde-multimedia-meta
