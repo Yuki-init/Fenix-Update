@@ -38,6 +38,7 @@ echo "  Using AUR helper: $AUR_HELPER"
 
 # ── Pacman packages ────────────────────────────────────────────────────────────
 PACMAN_PKGS=(
+    flatpak
     lib32-vulkan-intel
     plasma-meta
     noto-fonts
