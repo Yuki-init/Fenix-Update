@@ -59,6 +59,7 @@ PACMAN_PKGS=(
     haruna
     discord
     steam
+    ares-emu
     lutris
     handbrake
 )
@@ -70,7 +71,6 @@ sudo pacman -S --noconfirm --needed "${PACMAN_PKGS[@]}"
 AUR_PKGS=(
     visual-studio-code-bin
     google-chrome
-    ares
     protonup-qt
     heroic-games-launcher-bin
 )
